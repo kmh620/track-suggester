@@ -17,6 +17,30 @@
 #logo {
   width: 200px;
 }
+
+.modal-header {
+  background-color: #00b3b4;
+}
+
+.modal-title {
+  color: white;
+}
+
+
+.modal-body {
+  background-color:  #969696;
+  color: white;
+
+}
+
+.jumbotron {
+  text-align: center;
+}
+
+.form-group {
+  
+}
+
 h1 {
   font-family: Arial, sans-serif;
   font-size: 100px;
@@ -36,5 +60,17 @@ h3 {
   font-family: Arial, sans-serif;
   font-size: 25px;
   font-weight: 400;
-    color: #4a4a4a;
+
+}
+
+h4 {
+  font-size: 50px;
+  text-align: center;
+  text-decoration: underline;
+}
+
+a {
+  border: 2px solid #4a4a4a;
+  padding: 5px;
+  color: #4a4a4a;
 }

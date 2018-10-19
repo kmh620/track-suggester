@@ -1,6 +1,7 @@
 
 $(document).ready(function() {
   $("form#questions").submit(function(event) {
+    var name = $("#your-name").val();
     var workstyle = $("input:radio[name=work-style]:checked").val();
     var location = $("input:radio[name=location]:checked").val();
     var development = $("input:radio[name=development]:checked").val();
@@ -11,6 +12,7 @@ $(document).ready(function() {
     if (workstyle ==="computer-no" || location ==="neither") {
       $("#no-track").show();
       $("#suggestion-modal").show();
+      $(".name").text(name);
       $("#php").hide();
       $("#c-sharp").hide();
       $("#ruby").hide();
@@ -19,6 +21,7 @@ $(document).ready(function() {
     } else if (development ==="back-end" && content ==="content-mgmt") {
       $("#php").show();
       $("#suggestion-modal").show();
+      $(".name").text(name);
       $("#no-track").hide();
       $("#c-sharp").hide();
       $("#ruby").hide();
@@ -27,6 +30,7 @@ $(document).ready(function() {
     } else if (companySize ==="large" && content ==="business") {
       $("#c-sharp").show();
       $("#suggestion-modal").show();
+      $(".name").text(name);
       $("#php").hide();
       $("#no-track").hide();
       $("#ruby").hide();
@@ -35,6 +39,7 @@ $(document).ready(function() {
     } else if (development ==="front-end" && companySize ==="start-up" && content ==="interactive") {
       $("#ruby").show();
       $("#suggestion-modal").show();
+      $(".name").text(name);
       $("#php").hide();
       $("#c-sharp").hide();
       $("#java").hide();
@@ -43,14 +48,16 @@ $(document).ready(function() {
     } else if (development ==="back-end" && companySize ==="large" && content ==="interactive") {
       $("#java").show();
       $("#suggestion-modal").show();
+      $(".name").text(name);
       $("#php").hide();
       $("#c-sharp").hide();
       $("#ruby").hide();
       $("#no-track").hide();
-    
+
     } else {
       $("#no-track").show();
       $("#suggestion-modal").show();
+      $(".name").text(name);
       $("#java").hide();
       $("#php").hide();
       $("#c-sharp").hide();
