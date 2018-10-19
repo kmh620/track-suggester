@@ -1,5 +1,42 @@
 
 $(document).ready(function() {
+  $(".form-groupOne").hide();
+  $(".form-groupTwo").hide();
+  $(".form-groupThree").hide();
+  $(".form-groupFour").hide();
+  $(".form-groupFive").hide();
+  $(".form-groupButton").hide();
+
+  $(".start-quiz").click(function(){
+    $(".form-groupOne").show(1000);
+    $(".form-groupName").hide(1000);
+  });
+  $(".form-groupOne").click(function() {
+    $(".form-groupTwo").show(1000);
+    $(".form-groupOne").hide(1000);
+  });
+  $(".form-groupTwo").click(function() {
+    $(".form-groupThree").show(1000);
+    $(".form-groupTwo").hide(1000);
+  });
+  $(".form-groupThree").click(function() {
+    $(".form-groupFour").show(1000);
+    $(".form-groupThree").hide(1000);
+  });
+  $(".form-groupFour").click(function() {
+    $(".form-groupFive").show(1000);
+    $(".form-groupFour").hide(1000);
+  });
+  $(".form-groupFive").click(function() {
+    $(".form-groupButton").show(1000);
+    $(".form-groupFive").hide(1000);
+  });
+
+
+
+
+
+
   $("form#questions").submit(function(event) {
     var name = $("#your-name").val();
     var workstyle = $("input:radio[name=work-style]:checked").val();
@@ -7,6 +44,7 @@ $(document).ready(function() {
     var development = $("input:radio[name=development]:checked").val();
     var companySize = $("input:radio[name=company-size]:checked").val();
     var content = $("input:radio[name=content]:checked").val();
+
 
 
     if (workstyle ==="computer-no" || location ==="neither") {

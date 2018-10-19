@@ -22,14 +22,15 @@
 
       <div class="form-container"> <!--for col md size?-->
         <form id="name">
-             <div class="form-group">
-               <label for="your-name">Your Name</label>
+             <div class="form-groupName">
+               <label for="your-name">Enter Your Name</label>
                <input id="your-name" class="form-control" type="text">
+               <p><span class="start-quiz btn btn-default">Start Quiz!</span></p>
              </div>
         </form>
 
         <form id="questions">
-          <div class="form-group">
+          <div class="form-groupOne">
             <div class="radio">
               <h3>Question 1:</h3>
               <p><strong>Location</strong> Which Epicodus location would you like to study at?</p>
@@ -48,7 +49,7 @@
             </div>
           </div>
 
-          <div class="form-group">
+          <div class="form-groupTwo">
             <div class="radio">
               <h3>Question 2:</h3>
               <p><strong>Work style</strong> Can you sit at a computer for extended periods of time?</p>
@@ -63,7 +64,7 @@
             </div>
           </div>
 
-          <div class="form-group">
+          <div class="form-groupThree">
             <div class="radio">
               <h3>Question 3:</h3>
               <p><strong>Development</strong> Would you prefer more front-end or back-end development?</p>
@@ -82,7 +83,7 @@
             </div>
           </div>
 
-          <div class="form-group">
+          <div class="form-groupFour">
             <div class="radio">
               <h3>Question 4:</h3>
               <p><strong>Company Size</strong> What size of company do you want to work for?</p>
@@ -97,7 +98,7 @@
             </div>
           </div>
 
-          <div class="form-group">
+          <div class="form-groupFive">
             <div class="radio">
               <h3>Question 5:</h3>
               <p><strong>Content</strong> What kind of web content do you want to create?</p>
@@ -116,7 +117,7 @@
             </div>
           </div>
 
-          <div class="form-group style-button">
+          <div class="form-groupButton style-button">
             <button type="submit" class="btn btn-default">Submit</button>
           </div>
         </form>
@@ -127,7 +128,7 @@
        <div class="modal-dialog" role="document">
          <div class="modal-content">
            <div class="modal-header">
-        
+
              <h3 class="modal-title"><p class="name"></p>Your <strong>Epicodus Suggested Track</strong> is:</h3>
            </div>
            <div class="modal-body">
