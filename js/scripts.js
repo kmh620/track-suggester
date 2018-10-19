@@ -42,7 +42,7 @@ $(document).ready(function() {
     var content = $("input:radio[name=content]:checked").val();
 
 
-    if (workstyle ==="computer-no" || location ==="neither") {
+    if (workstyle ==="computer-no") {
       $("#no-track").show();
       $("#suggestion-modal").show();
       $(".name").text(name);
@@ -50,6 +50,17 @@ $(document).ready(function() {
       $("#c-sharp").hide();
       $("#ruby").hide();
       $("#java").hide();
+      $("#online").hide();
+
+    } else if (location ==="neither") {
+      $("#online").show();
+      $("#suggestion-modal").show();
+      $(".name").text(name);
+      $("#no-track").hide();
+      $("#c-sharp").hide();
+      $("#ruby").hide();
+      $("#java").hide();
+      $("#php").hide();
 
     } else if (development ==="back-end" && content ==="content-mgmt") {
       $("#php").show();
@@ -59,6 +70,7 @@ $(document).ready(function() {
       $("#c-sharp").hide();
       $("#ruby").hide();
       $("#java").hide();
+      $("#online").hide();
 
     } else if (companySize ==="large" && content ==="business") {
       $("#c-sharp").show();
@@ -68,6 +80,7 @@ $(document).ready(function() {
       $("#no-track").hide();
       $("#ruby").hide();
       $("#java").hide();
+      $("#online").hide();
 
     } else if (development ==="front-end" && companySize ==="start-up" && content ==="interactive") {
       $("#ruby").show();
@@ -77,6 +90,8 @@ $(document).ready(function() {
       $("#c-sharp").hide();
       $("#java").hide();
       $("#no-track").hide();
+      $("#online").hide();
+
 
     } else if (development ==="back-end" && companySize ==="large" && content ==="interactive") {
       $("#java").show();
@@ -86,6 +101,7 @@ $(document).ready(function() {
       $("#c-sharp").hide();
       $("#ruby").hide();
       $("#no-track").hide();
+      $("#online").hide();
 
     } else {
       $("#no-track").show();
@@ -95,6 +111,7 @@ $(document).ready(function() {
       $("#php").hide();
       $("#c-sharp").hide();
       $("#ruby").hide();
+      $("#online").hide();
     }
 
       event.preventDefault();
