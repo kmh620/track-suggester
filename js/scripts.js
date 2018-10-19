@@ -7,15 +7,21 @@ $(document).ready(function() {
     var companySize = $("input:radio[name=company-size]:checked").val();
     var content = $("input:radio[name=content]:checked").val();
 
-    if (location = portland || seattle) {
-      $("#ruby").show();
+    if (workstyle ==="computer-yes" && location ==="portland" || "seattle" && development ==="back-end" && content ==="content-mgmt") {
+      $("#php").show();
 
-    } else {
-      $("#no-track").show();
     }
 
 
 
-    event.preventDefault();
-  });
+
+    //if (location = "portland" || "seattle") {
+      //$("#ruby").show();
+      event.preventDefault();
+    })
+
+
+
+
+
 });
