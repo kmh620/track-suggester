@@ -7,9 +7,36 @@ $(document).ready(function() {
     var companySize = $("input:radio[name=company-size]:checked").val();
     var content = $("input:radio[name=content]:checked").val();
 
-    if (workstyle ==="computer-yes" && location ==="portland" || "seattle" && development ==="back-end" && content ==="content-mgmt") {
-      $("#php").show();
 
+    if (workstyle ==="computer-no" || location ==="neither") {
+      $("#no-track").show();
+      $("#php").hide();
+      $("#c-sharp").hide();
+      $("#ruby").hide();
+
+    } else if (development ==="back-end" && content ==="content-mgmt") {
+      $("#php").show();
+      $("#no-track").hide();
+      $("#c-sharp").hide();
+      $("#ruby").hide();
+
+    } else if (companySize ==="large" && content ==="business") {
+      $("#c-sharp").show();
+      $("#php").hide();
+      $("#no-track").hide();
+      $("#ruby").hide();
+
+    } else if (development ==="front-end" && companySize ==="start-up" || content ==="interactive") {
+      $("#ruby").show();
+      $("#php").hide();
+      $("#c-sharp").hide();
+      $("#no-track").hide();
+
+    } else {
+      $("#no-track").show();
+      $("#php").hide();
+      $("#c-sharp").hide();
+      $("#ruby").hide();
     }
 
 
