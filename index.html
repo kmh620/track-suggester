@@ -25,7 +25,7 @@
               <div class="well">
                <label for="your-name">Enter Your Name</label>
                <input id="your-name" class="form-control" type="text">
-               <p><span class="start-quiz btn btn-default">Start Quiz!</span></p>
+               <p2><span class="start-quiz btn btn-default">Start Quiz!</span></p2>
              </div>
            </div>
         </form>
@@ -34,8 +34,9 @@
           <div class="form-groupOne">
             <div class="radio">
               <h3>Question 1:</h3>
-              <p><strong>Location</strong> Which Epicodus location would you like to study at?</p>
-              <label>
+              <p2><strong>Location</strong> Which Epicodus location would you like to study at?</p2>
+              <div class="well">
+                <label>
                 <input type="radio" name="location" value="portland">
                 Portland, OR
               </label>
@@ -47,80 +48,89 @@
                 <input type="radio" name="location" value="neither">
                 I don't want to go to either of those locations
               </label>
+             </div>
             </div>
           </div>
 
           <div class="form-groupTwo">
             <div class="radio">
               <h3>Question 2:</h3>
-              <p><strong>Work style</strong> Can you sit at a computer for extended periods of time?</p>
-              <label>
-                <input  type="radio" name="work-style" value="computer-yes">
-                Absolutely!
-              </label>
-              <label>
-                <input  type="radio" name="work-style" value="computer-no">
-                No Way!
-              </label>
+              <p2><strong>Work style</strong> Can you sit at a computer for extended periods of time?</p2>
+              <div class="well">
+                <label>
+                  <input  type="radio" name="work-style" value="computer-yes">
+                  Absolutely!
+                </label>
+                <label>
+                  <input  type="radio" name="work-style" value="computer-no">
+                  No Way!
+                </label>
+              </div>
             </div>
           </div>
 
           <div class="form-groupThree">
             <div class="radio">
               <h3>Question 3:</h3>
-              <p><strong>Development</strong> Would you prefer more front-end or back-end development?</p>
-              <label>
-                <input  type="radio" name="development" value="front-end">
-                Front-end
-              </label>
-              <label>
-                <input  type="radio" name="development" value="back-end">
-                Back-end
-              </label>
-              <label>
-                <input  type="radio" name="development" value="either">
-                Either one
-              </label>
+              <p2><strong>Development</strong> Would you prefer more front-end or back-end development?</p2>
+              <div class="well">
+                <label>
+                  <input  type="radio" name="development" value="front-end">
+                  Front-end
+                </label>
+                <label>
+                  <input  type="radio" name="development" value="back-end">
+                  Back-end
+                </label>
+                <label>
+                  <input  type="radio" name="development" value="either">
+                  Either one
+                </label>
+              </div>
             </div>
           </div>
 
           <div class="form-groupFour">
             <div class="radio">
               <h3>Question 4:</h3>
-              <p><strong>Company Size</strong> What size of company do you want to work for?</p>
-              <label>
-                <input  type="radio" name="company-size" value="large">
-                A large, well known company
-              </label>
-              <label>
-                <input  type="radio" name="company-size" value="start-up">
-                Smaller start-up company
-              </label>
+              <p2><strong>Company Size</strong> What size of company do you want to work for?</p2>
+              <div class="well">
+                <label>
+                  <input  type="radio" name="company-size" value="large">
+                  A large, well known company
+                </label>
+                <label>
+                  <input  type="radio" name="company-size" value="start-up">
+                  Smaller start-up company
+                </label>
+              </div>
             </div>
           </div>
 
           <div class="form-groupFive">
             <div class="radio">
               <h3>Question 5:</h3>
-              <p><strong>Content</strong> What kind of web content do you want to create?</p>
-              <label>
-                <input  type="radio" name="content" value="business">
-                Business software
-              </label>
-              <label>
-                <input  type="radio" name="content" value="interactive">
-                Interactive web apps
-              </label>
-              <label>
-                <input  type="radio" name="content" value="content-mgmt">
-                Content management websites
-              </label>
+              <p2><strong>Content</strong> What kind of web content do you want to create?</p2>
+              <div class="well">
+                <label>
+                  <input  type="radio" name="content" value="business">
+                  Business software
+                </label>
+                <label>
+                  <input  type="radio" name="content" value="interactive">
+                  Interactive web apps
+                </label>
+                <label>
+                  <input  type="radio" name="content" value="content-mgmt">
+                  Content management websites
+                </label>
+              </div>
             </div>
           </div>
 
           <div class="form-groupButton style-button">
             <div class="well">
-              <p>Submit quiz by clicking below!</p>
+              <p2>Submit quiz by clicking below!</p2>
               <button type="submit" class="btn btn-default">Submit</button>
             </div>
           </div>
@@ -128,7 +138,7 @@
       </div>
 
       <div id="suggestion-modal" class="modal" tabindex="-1" role="dialog">
-       <div class="modal-dialog" role="document">
+       <div class="modal-dialog modal-lg" role="document">
          <div class="modal-content">
            <div class="modal-header">
              <h3 class="modal-title"><p class="name"></p>Your <strong>Epicodus Suggested Track</strong> is:</h3>
@@ -136,30 +146,30 @@
              <div class="modal-body">
               <div id="c-sharp">
                 <h4>C#</h4>
-                <p>C# is most popular among bigger established businesses, often for building internal software. Because it's been around for a long time and has the backing of Microsoft, it is one of the most in-demand languages in the job market. C# has also been going through a bit of a rebirth lately, with Microsoft open sourcing the language and surrounding platform, porting it to run on Mac and Linux, and incorporating many of the best features of other languages. If you like the idea of working for a larger company on business software, C# is a great choice.</p>
+                <p3>C# is most popular among bigger established businesses, often for building internal software. Because it's been around for a long time and has the backing of Microsoft, it is one of the most in-demand languages in the job market. C# has also been going through a bit of a rebirth lately, with Microsoft open sourcing the language and surrounding platform, porting it to run on Mac and Linux, and incorporating many of the best features of other languages. If you like the idea of working for a larger company on business software, C# is a great choice.</p3>
                 <a href="https://www.epicodus.com/c-sharp"><em>More info</em></a>
               </div>
 
               <div id="ruby">
                 <h4>Ruby</h4>
-                <p>Ruby is a favorite language of developers building interactive web applications. If an app involves users creating accounts, entering information, and interacting with dynamic content, there's a good chance it is built with Ruby. Ruby became popular because the Rails framework, which is written with Ruby, simplified many of the common tasks associated with building web applications. It's most popular with startups and smaller companies who are looking to build their product quickly.</p>
+                <p3>Ruby is a favorite language of developers building interactive web applications. If an app involves users creating accounts, entering information, and interacting with dynamic content, there's a good chance it is built with Ruby. Ruby became popular because the Rails framework, which is written with Ruby, simplified many of the common tasks associated with building web applications. It's most popular with startups and smaller companies who are looking to build their product quickly.</p3>
                 <a href="https://www.epicodus.com/ruby"><em>More info</em></a>
               </div>
 
               <div id="php">
                 <h4>PHP</h4>
-                <p>PHP is by far the most popular backend language today, with 80 percent of websites utilizing it 'server-side'. It is perhaps best known for it's use in content management systems like Wordpress, Drupal, and Joomla. But the versatility of the language and the frameworks it powers make employment options numerous and diverse. If you're keen to work for a fast paced agency that builds websites for lots of clients, or maintain the security and stability of a huge complex of government websites, or if you like the idea of building out small sites for brands, businesses, and organizations - In any of these cases, PHP would be a great way to go.</p>
+                <p3>PHP is by far the most popular backend language today, with 80 percent of websites utilizing it 'server-side'. It is perhaps best known for it's use in content management systems like Wordpress, Drupal, and Joomla. But the versatility of the language and the frameworks it powers make employment options numerous and diverse. If you're keen to work for a fast paced agency that builds websites for lots of clients, or maintain the security and stability of a huge complex of government websites, or if you like the idea of building out small sites for brands, businesses, and organizations - In any of these cases, PHP would be a great way to go.</p3>
                 <a href="https://www.epicodus.com/php"><em>More info</em></a>
               </div>
 
               <div id="java">
                 <h4>Java</h4>
-                <p>Java is also a favorite of enterprise companies, but its appeal is broader as well: it's one of the most popular of all programming languages, and it's used in everything from for high-performance processing to building Android user interfaces. Because Java has been very popular for a very long time and is used in so many applications, it is also a very high-demand language. If you're interested in working for an enterprise-level company, as an Android developer, or in high-performance applications, Java could be a good language to learn..</p>
+                <p3>Java is also a favorite of enterprise companies, but its appeal is broader as well: it's one of the most popular of all programming languages, and it's used in everything from for high-performance processing to building Android user interfaces. Because Java has been very popular for a very long time and is used in so many applications, it is also a very high-demand language. If you're interested in working for an enterprise-level company, as an Android developer, or in high-performance applications, Java could be a good language to learn..</p3>
                 <a href="https://www.epicodus.com/java"><em>More info</em></a>
               </div>
 
               <div id="no-track">
-                <p>Sorry, looks like no tracks work for you. Try the quiz again, or rethink learning to code.</p>
+                <p3>Sorry, looks like no tracks work for you. Try the quiz again, or rethink learning to code.</p3>
               </div>
             </div>
           </div>
