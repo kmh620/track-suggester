@@ -13,6 +13,9 @@ _Quiz for determining which language track at Epicodus a user should take._
 * _Clone GitHub URL in terminal_
 * _Open in Web Browser_
 * _Take quiz_
+##### or
+
+* _Go to [Tracker gh-pages link](https://kmh620.github.io/track-suggester/)
 
 ## Technologies Used
 _GitHub, HTML, CSS, Bootstrap, Javascript, JQuery_
