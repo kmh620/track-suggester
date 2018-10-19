@@ -1,3 +1,62 @@
+h1 {
+  font-family: Arial, sans-serif;
+  font-size: 100px;
+  font-weight: 400;
+  color: #4a4a4a;
+}
+
+body {
+  color: #666;
+  font-family: nimbus-sans;
+  font-weight: 300;
+  font-size: 18px;
+}
+
+h3 {
+  font-family: Arial, sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+}
+
+h4 {
+  font-size: 50px;
+  text-align: center;
+  text-decoration: underline;
+}
+
+a {
+  text-align: center;
+  border: 2px solid #4a4a4a;
+  padding: 5px;
+  color: #4a4a4a;
+}
+
+span {
+  margin-top: 25px;
+}
+
+.modal-header {
+  background-color: #00b3b4;
+}
+
+.modal-title {
+  color: white;
+}
+
+.modal-body {
+  background-color:  #969696;
+  color: white;
+}
+
+.jumbotron {
+  text-align: center;
+}
+
+.form-container {
+  width: 700px;
+  margin: 25px;
+}
+
 #c-sharp {
   display: none;
 }
@@ -20,67 +79,5 @@
 
 #questions {
   margin: 75px;
-}
-
-.modal-header {
-  background-color: #00b3b4;
-}
-
-.modal-title {
-  color: white;
-}
-
-
-.modal-body {
-  background-color:  #969696;
-  color: white;
-
-}
-
-.jumbotron {
-  text-align: center;
-}
-
-.form-group {
   width: 700px;
-  margin: 25px;
-}
-
-h1 {
-  font-family: Arial, sans-serif;
-  font-size: 100px;
-  font-weight: 400;
-    color: #4a4a4a;
-}
-
-body {
-  color: #666;
-  font-family: nimbus-sans;
-  font-weight: 300;
-  font-size: 18px;
-
-}
-
-h3 {
-  font-family: Arial, sans-serif;
-  font-size: 25px;
-  font-weight: 400;
-
-}
-
-h4 {
-  font-size: 50px;
-  text-align: center;
-  text-decoration: underline;
-}
-
-a {
-  text-align: center;
-  border: 2px solid #4a4a4a;
-  padding: 5px;
-  color: #4a4a4a;
-}
-
-p2 {
-  font-size: 25px;
 }

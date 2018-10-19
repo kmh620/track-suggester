@@ -33,10 +33,6 @@ $(document).ready(function() {
   });
 
 
-
-
-
-
   $("form#questions").submit(function(event) {
     var name = $("#your-name").val();
     var workstyle = $("input:radio[name=work-style]:checked").val();
@@ -44,7 +40,6 @@ $(document).ready(function() {
     var development = $("input:radio[name=development]:checked").val();
     var companySize = $("input:radio[name=company-size]:checked").val();
     var content = $("input:radio[name=content]:checked").val();
-
 
 
     if (workstyle ==="computer-no" || location ==="neither") {

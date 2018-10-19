@@ -17,16 +17,17 @@
       <div class="jumbotron">
         <h1><img id="logo" src="images/logo.png" alt="Epicodus logo">  Track Suggester</h1>
         <p1>Don't know which track to take? Take this quiz!</p1>
-
       </div>
 
-      <div class="form-container"> <!--for col md size?-->
+      <div class="form-container">
         <form id="name">
              <div class="form-groupName">
+              <div class="well">
                <label for="your-name">Enter Your Name</label>
                <input id="your-name" class="form-control" type="text">
                <p><span class="start-quiz btn btn-default">Start Quiz!</span></p>
              </div>
+           </div>
         </form>
 
         <form id="questions">
@@ -118,58 +119,52 @@
           </div>
 
           <div class="form-groupButton style-button">
-            <button type="submit" class="btn btn-default">Submit</button>
+            <div class="well">
+              <p>Submit quiz by clicking below!</p>
+              <button type="submit" class="btn btn-default">Submit</button>
+            </div>
           </div>
         </form>
-
       </div>
 
       <div id="suggestion-modal" class="modal" tabindex="-1" role="dialog">
        <div class="modal-dialog" role="document">
          <div class="modal-content">
            <div class="modal-header">
-
              <h3 class="modal-title"><p class="name"></p>Your <strong>Epicodus Suggested Track</strong> is:</h3>
            </div>
-           <div class="modal-body">
-            <div id="c-sharp">
-              <h4>C#</h4>
-              <p>C# is most popular among bigger established businesses, often for building internal software. Because it's been around for a long time and has the backing of Microsoft, it is one of the most in-demand languages in the job market. C# has also been going through a bit of a rebirth lately, with Microsoft open sourcing the language and surrounding platform, porting it to run on Mac and Linux, and incorporating many of the best features of other languages. If you like the idea of working for a larger company on business software, C# is a great choice.</p>
-              <a href="https://www.epicodus.com/c-sharp"><em>More info</em></a>
+             <div class="modal-body">
+              <div id="c-sharp">
+                <h4>C#</h4>
+                <p>C# is most popular among bigger established businesses, often for building internal software. Because it's been around for a long time and has the backing of Microsoft, it is one of the most in-demand languages in the job market. C# has also been going through a bit of a rebirth lately, with Microsoft open sourcing the language and surrounding platform, porting it to run on Mac and Linux, and incorporating many of the best features of other languages. If you like the idea of working for a larger company on business software, C# is a great choice.</p>
+                <a href="https://www.epicodus.com/c-sharp"><em>More info</em></a>
+              </div>
 
-          </div>
+              <div id="ruby">
+                <h4>Ruby</h4>
+                <p>Ruby is a favorite language of developers building interactive web applications. If an app involves users creating accounts, entering information, and interacting with dynamic content, there's a good chance it is built with Ruby. Ruby became popular because the Rails framework, which is written with Ruby, simplified many of the common tasks associated with building web applications. It's most popular with startups and smaller companies who are looking to build their product quickly.</p>
+                <a href="https://www.epicodus.com/ruby"><em>More info</em></a>
+              </div>
 
-            <div id="ruby">
-              <h4>Ruby</h4>
-              <p>Ruby is a favorite language of developers building interactive web applications. If an app involves users creating accounts, entering information, and interacting with dynamic content, there's a good chance it is built with Ruby. Ruby became popular because the Rails framework, which is written with Ruby, simplified many of the common tasks associated with building web applications. It's most popular with startups and smaller companies who are looking to build their product quickly.</p>
-              <a href="https://www.epicodus.com/ruby"><em>More info</em></a>
+              <div id="php">
+                <h4>PHP</h4>
+                <p>PHP is by far the most popular backend language today, with 80 percent of websites utilizing it 'server-side'. It is perhaps best known for it's use in content management systems like Wordpress, Drupal, and Joomla. But the versatility of the language and the frameworks it powers make employment options numerous and diverse. If you're keen to work for a fast paced agency that builds websites for lots of clients, or maintain the security and stability of a huge complex of government websites, or if you like the idea of building out small sites for brands, businesses, and organizations - In any of these cases, PHP would be a great way to go.</p>
+                <a href="https://www.epicodus.com/php"><em>More info</em></a>
+              </div>
+
+              <div id="java">
+                <h4>Java</h4>
+                <p>Java is also a favorite of enterprise companies, but its appeal is broader as well: it's one of the most popular of all programming languages, and it's used in everything from for high-performance processing to building Android user interfaces. Because Java has been very popular for a very long time and is used in so many applications, it is also a very high-demand language. If you're interested in working for an enterprise-level company, as an Android developer, or in high-performance applications, Java could be a good language to learn..</p>
+                <a href="https://www.epicodus.com/java"><em>More info</em></a>
+              </div>
+
+              <div id="no-track">
+                <p>Sorry, looks like no tracks work for you. Try the quiz again, or rethink learning to code.</p>
+              </div>
             </div>
-
-            <div id="php">
-              <h4>PHP</h4>
-              <p>PHP is by far the most popular backend language today, with 80 percent of websites utilizing it 'server-side'. It is perhaps best known for it's use in content management systems like Wordpress, Drupal, and Joomla. But the versatility of the language and the frameworks it powers make employment options numerous and diverse. If you're keen to work for a fast paced agency that builds websites for lots of clients, or maintain the security and stability of a huge complex of government websites, or if you like the idea of building out small sites for brands, businesses, and organizations - In any of these cases, PHP would be a great way to go.</p>
-              <a href="https://www.epicodus.com/php"><em>More info</em></a>
-            </div>
-
-            <div id="java">
-              <h4>Java</h4>
-              <p>Java is also a favorite of enterprise companies, but its appeal is broader as well: it's one of the most popular of all programming languages, and it's used in everything from for high-performance processing to building Android user interfaces. Because Java has been very popular for a very long time and is used in so many applications, it is also a very high-demand language. If you're interested in working for an enterprise-level company, as an Android developer, or in high-performance applications, Java could be a good language to learn..</p>
-              <a href="https://www.epicodus.com/java"><em>More info</em></a>
-            </div>
-
-            <div id="no-track">
-              <h4>Sorry...</h4>
-              <img src="" alt="">
-              <p2>... looks like no tracks work for you. Try the quiz again, or rethink learning to code.</p2>
-
-            </div>
-            </div>
-
           </div>
         </div>
       </div>
-
-
     </div>
   </body>
 </html>
