@@ -13,3 +13,28 @@
 #no-track {
   display: none;
 }
+
+#logo {
+  width: 200px;
+}
+h1 {
+  font-family: Arial, sans-serif;
+  font-size: 100px;
+  font-weight: 400;
+    color: #4a4a4a;
+}
+
+body {
+  color: #666;
+  font-family: nimbus-sans;
+  font-weight: 300;
+  font-size: 18px;
+
+}
+
+h3 {
+  font-family: Arial, sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+    color: #4a4a4a;
+}

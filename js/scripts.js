@@ -26,7 +26,7 @@ $(document).ready(function() {
       $("#no-track").hide();
       $("#ruby").hide();
 
-    } else if (development ==="front-end" && companySize ==="start-up" || content ==="interactive") {
+    } else if (development ==="front-end" && companySize ==="start-up" && content ==="interactive") {
       $("#ruby").show();
       $("#php").hide();
       $("#c-sharp").hide();
