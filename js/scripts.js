@@ -97,16 +97,6 @@ $(document).ready(function() {
       $("#ruby").hide();
     }
 
-
-
-
-    //if (location = "portland" || "seattle") {
-      //$("#ruby").show();
       event.preventDefault();
     })
-
-
-
-
-
 });
