@@ -2,8 +2,15 @@
 <html>
   <head>
     <meta charset="utf-8">
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/jquery-3.3.1.js" charset="utf-8"></script>
+    <script src="js/scripts.js" charset="utf-8"></script>
+
     <title>Track Suggester</title>
   </head>
+
   <body>
     <div class="container" id="bodycontainer">
       <div class="jumbotron">
@@ -12,22 +19,28 @@
       </div>
 
       <div class=""> <!--for col md size?-->
-        <form id="questions">
+        <form id="name">
+             <div class="form-group">
+               <label for="your-name">Your Name</label>
+               <input id="your-name" class="form-control" type="text">
+             </div>
+        </form>
 
+        <form id="questions">
           <div class="form-group">
             <div class="radio">
-              <h3>question1</h3>
+              <h3>Question 1:</h3>
               <p><strong>Location</strong> Which Epicodus location would you like to study at?</p>
               <label for="portland">
-                <input class="form-control" type="radio" value="portland">
+                <input class="form-control" type="radio" name="location" value="portland">
                 Portland, OR
               </label>
               <label>
-                <input class="form-control" type="radio" value="seattle">
+                <input class="form-control" type="radio" name="location" value="seattle">
                 Seattle, WA
               </label>
               <label>
-                <input class="form-control" type="radio" value="neither">
+                <input class="form-control" type="radio" name="location" value="neither">
                 I don't want to go to either of those locations
               </label>
             </div>
@@ -35,14 +48,14 @@
 
           <div class="form-group">
             <div class="radio">
-              <h3>question2</h3>
+              <h3>Question 2:</h3>
               <p><strong>Work style</strong> Can you sit at a computer for extended periods of time?</p>
               <label>
-                <input class="form-control" type="radio" value="computer-yes">
+                <input class="form-control" type="radio" name="work-style"value="computer-yes">
                 Absolutely!
               </label>
               <label>
-                <input class="form-control" type="radio" value="computer-no">
+                <input class="form-control" type="radio" name="work-style"value="computer-no">
                 No Way!
               </label>
             </div>
@@ -50,18 +63,18 @@
 
           <div class="form-group">
             <div class="radio">
-              <h3>question3</h3>
+              <h3>Question 3:</h3>
               <p><strong>Development</strong> Would you prefer more front-end or back-end development?</p>
               <label>
-                <input class="form-control" type="radio" value="front-end">
+                <input class="form-control" type="radio" name="development" value="front-end">
                 Front-end
               </label>
               <label>
-                <input class="form-control" type="radio" value="back-end">
+                <input class="form-control" type="radio" name="development" value="back-end">
                 Back-end
               </label>
               <label>
-                <input class="form-control" type="radio" value="either">
+                <input class="form-control" type="radio" name="development" value="either">
                 Either one
               </label>
             </div>
@@ -69,14 +82,14 @@
 
           <div class="form-group">
             <div class="radio">
-              <h3>question4</h3>
+              <h3>Question 4:</h3>
               <p><strong>Company Size</strong> What size of company do you want to work for?</p>
               <label>
-                <input class="form-control" type="radio" value="large">
+                <input class="form-control" type="radio" name="company-size" value="large">
                 A large, well known company
               </label>
               <label>
-                <input class="form-control" type="radio" value="start-up">
+                <input class="form-control" type="radio" name="company-size" value="start-up">
                 Smaller start-up company
               </label>
             </div>
@@ -84,24 +97,24 @@
 
           <div class="form-group">
             <div class="radio">
-              <h3>question5</h3>
+              <h3>Question 5;</h3>
               <p><strong>Content</strong> What kind of web content do you want to create?</p>
               <label>
-                <input class="form-control" type="radio" value="business">
+                <input class="form-control" type="radio" name="content" value="business">
                 Business software
               </label>
               <label>
-                <input class="form-control" type="radio" value="interactive">
+                <input class="form-control" type="radio" name="content" value="interactive">
                 Interactive web apps
               </label>
               <label>
-                <input class="form-control" type="radio" value="content-mgmt">
+                <input class="form-control" type="radio" name="content" value="content-mgmt">
                 Content management websites
               </label>
             </div>
           </div>
 
-          <div class="form-group">
+    <!--      <div class="form-group">
             <div class="radio">
               <h3>question6</h3>
               <p>Descritption of question?</p>
@@ -115,10 +128,12 @@
                 <input type="radio"value="answer3">
               </label>
             </div>
+          </div> <!-->
+
+
+          <div class="form-group style-button">
+            <button type="submit" class="btn btn-default">Submit</button>
           </div>
-
-
-
         </form>
 
 
