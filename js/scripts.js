@@ -14,6 +14,7 @@ $(document).ready(function() {
       $("#php").hide();
       $("#c-sharp").hide();
       $("#ruby").hide();
+      $("#java").hide();
 
     } else if (development ==="back-end" && content ==="content-mgmt") {
       $("#php").show();
@@ -21,6 +22,7 @@ $(document).ready(function() {
       $("#no-track").hide();
       $("#c-sharp").hide();
       $("#ruby").hide();
+      $("#java").hide();
 
     } else if (companySize ==="large" && content ==="business") {
       $("#c-sharp").show();
@@ -28,17 +30,28 @@ $(document).ready(function() {
       $("#php").hide();
       $("#no-track").hide();
       $("#ruby").hide();
+      $("#java").hide();
 
     } else if (development ==="front-end" && companySize ==="start-up" && content ==="interactive") {
       $("#ruby").show();
       $("#suggestion-modal").show();
       $("#php").hide();
       $("#c-sharp").hide();
+      $("#java").hide();
       $("#no-track").hide();
 
+    } else if (development ==="back-end" && companySize ==="large" && content ==="interactive") {
+      $("#java").show();
+      $("#suggestion-modal").show();
+      $("#php").hide();
+      $("#c-sharp").hide();
+      $("#ruby").hide();
+      $("#no-track").hide();
+    
     } else {
       $("#no-track").show();
       $("#suggestion-modal").show();
+      $("#java").hide();
       $("#php").hide();
       $("#c-sharp").hide();
       $("#ruby").hide();
