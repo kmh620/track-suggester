@@ -61,6 +61,11 @@ p3 {
   margin: 25px;
 }
 
+#bodycontainer {
+  text-align: center;
+  width: 800px;
+}
+
 #c-sharp {
   display: none;
 }
