@@ -6,7 +6,11 @@ $(document).ready(function() {
     var development = $("input:radio[name=development]:checked").val();
     var companySize = $("input:radio[name=company-size]:checked").val();
     var content = $("input:radio[name=content]:checked").val();
+
     
+
+
+
     event.preventDefault();
   });
 });
