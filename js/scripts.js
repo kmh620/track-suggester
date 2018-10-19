@@ -92,7 +92,6 @@ $(document).ready(function() {
       $("#no-track").hide();
       $("#online").hide();
 
-
     } else if (development ==="back-end" && companySize ==="large" && content ==="interactive") {
       $("#java").show();
       $("#suggestion-modal").show();
